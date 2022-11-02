@@ -56,7 +56,7 @@ export class UI {
     addButton.innerHTML = "Guardar";
     addButton.type = "submit";
     addButton.onclick = function () {
-      var valorInput = document.getElementById("formNombre").value;
+      let valorInput = document.getElementById("formNombre").value;
       addPlayer(valorInput, score);
       showRankings();
     };
