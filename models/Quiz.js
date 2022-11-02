@@ -29,10 +29,10 @@ export class Quiz {
    * @param {string} choice texto sin relevancia
    */
   guess(choice) {
-    var pos = this.getQuestionIndex().choices.indexOf(choice);
+    let pos = this.getQuestionIndex().choices.indexOf(choice);
 
     if (this.getQuestionIndex().correctAnswer(choice)) {
-      var points = document.getElementById("temporizador").title;
+      let points = document.getElementById("temporizador").title;
 
       if (document.getElementById("temporizador").textContent == "Go!") {
         this.score += 30;
