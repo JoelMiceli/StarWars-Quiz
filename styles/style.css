@@ -69,6 +69,8 @@ body {
   height: auto;
   margin-bottom: 45px;
   opacity: 0.4;
+  animation: heartBeat;
+  animation-duration: 15s;
 }
 
 #formNombre {
