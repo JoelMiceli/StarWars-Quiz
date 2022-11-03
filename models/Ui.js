@@ -7,7 +7,7 @@ export class UI {
 
   /**
    *
-   * @param {string} text preguntas a renderizar
+   * @param {string} text 
    */
   showQuestion(text) {
     const questionTitle = document.getElementById("question");
@@ -16,7 +16,7 @@ export class UI {
 
   /**
    *
-   * @param {string[]} choices las elecciones de las preguntas
+   * @param {string[]} choices elecciones de las preguntas
    */
   showChoices(choices, callback) {
     const choicesContainer = document.getElementById("choices");
@@ -106,8 +106,8 @@ export class UI {
 
   /**
    *
-   * @param {number} currentIndex el indice actual de la trivia
-   * @param {number} total el total de preguntas
+   * @param {number} currentIndex 
+   * @param {number} total 
    */
   showProgress(currentIndex, total) {
     const element = document.getElementById("progress");
@@ -169,3 +169,12 @@ export class UI {
     element.append(choi);
   }
 }
+
+function consultarPeliculasSW() {
+  const url = "https://swapi.dev/api/films";
+  fetch(url)
+      .then( response => response.json() )
+      .then( result => console.log(result));
+}
+
+consultarPeliculasSW()
