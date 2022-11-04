@@ -42,3 +42,13 @@ function main() {
 }
 
 main();
+
+
+function consultarPeliculasSW() {
+  const url = "https://swapi.dev/api/films";
+  fetch(url)
+      .then( response => response.json() )
+      .then( result => console.log(result));
+}
+
+consultarPeliculasSW()

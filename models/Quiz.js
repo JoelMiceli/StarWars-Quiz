@@ -26,7 +26,7 @@ export class Quiz {
 
   /**
    *
-   * @param {string} choice texto sin relevancia
+   * @param {string} choice 
    */
   guess(choice) {
     let pos = this.getQuestionIndex().choices.indexOf(choice);

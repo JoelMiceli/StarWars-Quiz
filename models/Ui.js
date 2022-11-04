@@ -169,12 +169,3 @@ export class UI {
     element.append(choi);
   }
 }
-
-function consultarPeliculasSW() {
-  const url = "https://swapi.dev/api/films";
-  fetch(url)
-      .then( response => response.json() )
-      .then( result => console.log(result));
-}
-
-consultarPeliculasSW()
