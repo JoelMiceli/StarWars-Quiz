@@ -63,7 +63,7 @@ function showRankings() {
 
   let ranking = 1;
 
-  for (let index = 0; index < 10; index++) {
+  for (let index = 0; index < jugadores.length; index++) {
     let row = "a" + index;
     row = document.createElement("tr");
     alltable.append(row);
