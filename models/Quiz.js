@@ -45,9 +45,10 @@ export class Quiz {
     } else {
       document.querySelectorAll("button")[pos].style.background = "red";
 
+      let posCorrectAnswer
       for (let index = 0; index < this.getQuestionIndex().choices.length; index++) {
         if(this.getQuestionIndex().correctAnswer(this.getQuestionIndex().choices[index])){
-        var posCorrectAnswer = index;
+         posCorrectAnswer = index;
         }
       }
 
